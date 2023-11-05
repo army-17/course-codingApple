@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--
+            HTML 꾸미는 속성은 style=""
+            
+            style 속성
+            style=" 스타일명 : 값"
+
+            margin : 여백
+            margin-left: 30px;
+            단위 : px, vw, %(내 부모 사이즈 비례) 
+
+            폰트 종류 : font-family : 'gulim'
+            #eeeee 핵스 컬러
+            자간 조절 : letter-spacing : 1px
+            글자 정렬 : text-align
+            
+            <span> 태그는 별의미 없는 태그로 감싸기 위한 용
+
+            글자 굵기 : font-weight / <strong></strong>
+            
+            속성은 다 외울 필요없음 검색하면 된다.
+
+            -----------------------------------------------
+            4강
+            
+            CSS (Cascading Style Sheet) : 스타일 보관 파일
+            Cascading : 폭포처럼 떨어진다.
+
+            CSS 속성으로 넣으면 태그 안의 내용이 너무 길어지니까 CSS 파일 이용
+            <link> 태그 이용하여 css 파일 경로 잡기 : href 뒤에는 쓰고싶은 css 파일의 상대적 위치 적기
+            
+            class 명은 . 찍고 이름 중복 x
+
+            style 적용 시 거의 class 사용/ id 사용 x => id는 거의 javaScript에서 사용
+            
+            css 파일에서 css selector 라고 부름
+            ex) .profile : class selector, p : tag selector, #special : id selector
+            
+
+            ## 스타일이 겹칠 경우 우선순위에 따라 정해짐 : tag (1점) class (10점) id (100점)
+                직접적으로 style=" " 은 1000점
+        -->
+        <img src="profile.png" class="profile">
+        <h3 class="title">Army</h3>
+        
+        <p><span>Front-end</span> Developer</p>
+        <p class="content" id="special">성공하는 개발자가 되어야지~</p>
+        <br><br>
+
+
+        <!-- 개인 프로필 작성하기 -->
+        <img src="profile.png" style="width: 100px;  
+        display: block; margin-left: auto; margin: auto;">
+
+        <h3 style="font-size: 20px; text-align: center;">Army</h3>
+        
+        <p style="text-align: center;"><span style="color: red; font-weight: 900; ">Back-end</span> Developer</p>
+        <p style="text-align: center;">얼른 경력 쌓아서 돈 많이 벌어야지~</p>
+    </body>
+</html>

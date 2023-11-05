@@ -1,0 +1,28 @@
+.profile{
+    width: 100px;  
+    display: block; 
+    margin-left: auto; 
+    margin: auto;
+}
+
+.title {
+    font-size: 16px; 
+    font-family: gulim; 
+    color: blue; 
+    letter-spacing: 10px; 
+    text-align: center;
+}
+
+p {
+    color: red; 
+    font-weight: 900;
+    text-align: center;
+}
+
+.content {
+    color: pink;
+}
+
+#special {
+    color: black;
+}
