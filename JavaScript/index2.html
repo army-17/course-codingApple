@@ -6,20 +6,42 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
-        <div class="alert-box" id="alert">알림창임</div> 
-        <button onclick="작명()">닫기</button>
-        <br>
-        <button onclick="document.getElementById('alert').style.display = 'block'">버튼</button>
         
 
+        <div class="alert-box" id="alert">알림창임
+            <button onclick="작명()">닫기</button>
+        </div> 
+        
+        <br>
+        <button onclick="openAlert('block')">버튼</button>
+        
 
         <script>
 
             function 작명(){
-                document.getElementById('alert').style.display='none'
+                document.getElementById('alert').style.display='none';
             }
 
+
+            function openAlert(구멍){
+                document.getElementById('alert').style.display = 구멍;
+            }
+
+            openAlert('block');
+            openAlert('none');
+
+
+            function plus(구멍){
+                
+
+                return 2 + 구멍;
+            }
+
+            plus(1)
+
         </script>
+
+
+
     </body>
 </html>

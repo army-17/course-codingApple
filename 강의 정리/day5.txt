@@ -1,0 +1,21 @@
+<자바스크립트 이벤트리스너>
+
+class로 찾기 : getElementsByClassName() 
+항상 [] 써줘야 함 (인덱싱 처리 꼭 해야함!!!)
+getElementsByClassName()[]
+
+
+# 이벤트란?
+
+사용자가 웹페이지에 동작을 하는 것들
+ex) 클릭, 키입력, 스크롤, 드래그 ,,,
+
+# 이벤트리스너 사용법
+        document.getElementById("close").addEventListener('event명', function(){
+            
+            실행할 코드 
+
+        });
+
+    -> function(){} : 콜백함수 (파라미터에 들어가는 함수)
+        - 코드를 순차적으로 실행할 때 가끔 보임

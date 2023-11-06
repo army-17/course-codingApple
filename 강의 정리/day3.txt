@@ -1,0 +1,16 @@
+함수로 선언 : 
+
+function 작명(){
+                document.getElementById('alert').style.display='none'
+            }
+
+- function 작명은 구체적으로 / camelCase
+
+=> 코드 재사용을 위해 function() 사용 -> 코드 간결하게 
+
+
+1. script는 <html> 하단에 코드를 짜야 잘 작동함
+2. 셀렉터 오타 주의 -> 콘솔창에서 디버깅 통해서 오류 찾기
+3. 그냥 기본문법 오타
+
+
