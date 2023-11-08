@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Lv1 7일차</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+    
+
+    <!-- <button type="button" class="btn btn-warning">Warning</button> -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand">Navbar</span>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav> 
+
+      <ul class="list-group" id="test1">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul> 
+
+      <p class="hello">안녕</p>
+      <p class="hello">안녕</p>
+      <p class="hello">안녕</p>
+      <button id="test-btn">버튼</button>
+
+      <script>
+
+        
+
+        /** 과제 : querySelector로 바꾸기 **/
+        document.querySelector(".navbar-toggler").addEventListener('click', function(){
+            // document.querySelector('.list-group').classList.toggle('show'); 또는
+            document.querySelectorAll('.list-group')[0].classList.toggle('show');
+        })
+
+        /**
+         javaScript는 코드가 매우 길고 난잡 => html 조작 문법을 쉽게 바꿔주는 라이브러리들 생김 (jQuery, React, Vue 등)
+          React와 Vue는 공부를 더 해야함
+          jQuery 로 수업
+         **/
+        
+         // jQuery : html 조작하는 코드가 짧아짐, jQuery는 라이브러리일 뿐, 문법이 크게 달라지는 것은 없음
+         // $ = querySelector
+
+        $('.navbar-toggler').on('click', function(){
+          
+        })
+
+        // <p> 내부 글자를 '바보'로 변경한다면?
+          // document.querySelector('.hello').innerHTML = '바보';
+          // $('.hello').html('바보');
+
+        // <p> 내부 글자 스타일 변경?
+          $('.hello').css('color', 'red');
+
+        // class 탈부착하는 코드도 짧아짐
+        // addClass() : class 더하기, removeClass() : 클래스 제거 / toggleClass() : 클래스를 떼었다 붙였다 해주는 함수
+        $('.hello').addClass('show');
+
+
+        // <p> 3개를 전부 '바보'로 바꾸려면?
+          document.querySelectorAll('.hello')[0].innerHTML = '바보';
+          document.querySelectorAll('.hello')[1].innerHTML = '바보';
+          document.querySelectorAll('.hello')[2].innerHTML = '바보';
+
+          $('.hello').html('바보');  // hello라는 클래스를 가진 태그들 모두 문구 변경해줌 (jQuery의 장점)
+
+        /**
+          이벤트 리스너
+          : 자바스크립트의 addEventLister(), jQuery에서는 on()
+          **/
+        
+        // 자바스크립트 경우, 
+        // document.querySelector('#test-btn').addEventListener();
+
+
+        // jQuery 경우, 간단하게 UI용 애니메이션 편리
+        $('#test-btn').on('click', function(){
+          // $('.hello').css('display', 'none');
+          // $('.hello').hide();  
+          // $('.hello').fadeOut();
+          $('.hello').slideUp();
+
+        })
+
+        /** 주의
+         * 
+         * $('셀렉터') 로 찾을 경우 jQuery 함수만 붙일 수 있음
+         * $('.hello').innerHtml() -> 이렇게 사용하면 안된다.
+         * 
+         * querySeletor('셀렉터')로 찾으면 자바스크립트 함수만 붙일 수 있음.
+         **/
+
+
+
+
+
+
+
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <!-- jQuery 라이브러리 설치 -->
+    <!-- 거의 모든 자바스크립트 라이브러리는 <body> 끝나기 전에 넣는거 권장 !!! -> 페이지 로드 성능 때문에 -->
+
+
+  </body>
+</html>

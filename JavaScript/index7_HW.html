@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7일차 과제</title>
+    <link rel="stylesheet" href="css/index7_HW.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <button id="open">로그인</button>
+
+    <div class="black-bg">
+        <div class="white-bg">
+          <h4>로그인하세요</h4>
+          <button class="btn btn-danger" id="close">닫기</button>
+        </div>
+      </div> 
+
+
+
+    <script>
+
+        /**  과제 : 버튼 누르면 모달창 띄워져야 함 **/
+
+        // $('.black-bg').hidse();
+
+        // // '로그인' 버튼 클릭 시, 모달창 open
+        // $('#open').on('click', function(){
+        // $('.black-bg').show();
+
+        // })
+
+        // // '닫기' 버튼 클릭 시, 모달창 close
+        // $('#close').on('click', function(){
+        //     $('.black-bg').hide();
+        // })
+
+
+
+        /****** class 추가, 삭제 방식 ******/
+
+        // class 추가하는 방식
+        $('#open').on('click', function(){
+            $('.black-bg').addClass('show-modal');
+            // document.querySelector('.black-bg').classList.add('show-modal');
+        })
+
+        // class 삭제하는 방식
+        $('#close').on('click', function(){
+            $('.black-bg').removeClass('show-modal');
+        })
+
+
+    </script>
+    
+</body>
+</html>

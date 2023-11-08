@@ -44,9 +44,15 @@
     //         // toggle : '있으면 없애주고, 있으면 떼어줘라' event
     //     })
 
+
+
+        /** 과제 : querySelector로 바꾸기 **/
         document.querySelector(".navbar-toggler").addEventListener('click', function(){
-            document.querySelector('.list-group').classList.toggle('show');
+            // document.querySelector('.list-group').classList.toggle('show'); 또는
+            document.querySelectorAll('.list-group')[0].classList.toggle('show');
         })
+
+        // 코드가 매우 길고 난잡 
 
       </script>
 
