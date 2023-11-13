@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7일차 과제 + 8일차</title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <button id="open">로그인</button>
+
+    <div class="black-bg">
+        <div class="white-bg">
+          <h4>로그인하세요</h4>
+          <button class="btn btn-danger" id="close">닫기</button>
+        </div>
+      </div> 
+
+
+    <script>
+
+        /****** 강의 6강 과제 : 버튼 누르면 모달창 띄워져야 함 ******/
+        /****** 내가 작성한 코드 ******/
+
+        // $('.black-bg').hidse();
+
+        // // '로그인' 버튼 클릭 시, 모달창 open
+        // $('#open').on('click', function(){
+        // $('.black-bg').show();
+
+        // })
+
+        // // '닫기' 버튼 클릭 시, 모달창 close
+        // $('#close').on('click', function(){
+        //     $('.black-bg').hide();
+        // })
+        /******************************************************/
+
+
+
+
+        /****** class 추가, 삭제 방식 => 확장성이 좋은 방식이다. ******/
+
+        // // class 추가하는 방식
+        // $('#open').on('click', function(){
+        //     $('.black-bg').addClass('show-modal');
+        //     // document.querySelector('.black-bg').classList.add('show-modal');
+        // })
+
+        // // class 삭제하는 방식
+        // $('#close').on('click', function(){
+        //     $('.black-bg').removeClass('show-modal');
+        // })
+
+
+
+
+        /***** 강의 7강 *****/
+        // $('#open').on('click', function(){
+        //     $('.black-bg').fadeIn();
+        // })
+        // 위와 같이 코드를 짤 경우, 애니메이션 부분을 javascript로 처리한 것인데 이는 javaScript에 부담을 주는 것임
+        // UI에 애니메이션을 추가하려면 되도록 CSS만으로 처리하는 것이 좋음 (성능 면에서)
+
+
+        /**
+        one-way UI 애니메이션 만드는 법 (A상태 -> B상태)
+        EX) 투명도가 0 -> 1
+
+        1) 시작스타일
+        2) 최종스타일 (class로 만들어 놓기)
+        3) 원할 때 최종 스타일로 변하라고 코드 짜기
+        4) transition 추가
+
+        **/
+
+
+
+        /** fade-In UI 애니메이션 만들기 **/
+        $('#open').on('click', function(){
+            $('.black-bg').addClass('show-modal');
+        })
+
+
+        /** HW : 위에서 모달창이 내려오는 애니메이션은? **/
+         
+        
+
+
+        /** HW : 접히는 애니메이션은? **/
+
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
