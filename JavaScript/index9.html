@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의 9일차</title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <button id="open">로그인</button>
+
+    <div class="black-bg">
+        <div class="white-bg">
+          <h4>로그인하세요</h4>
+          <form action="success.html">
+            <div class="my-3">
+              아이디 : <input type="text" class="form-control" id="idVal">
+             </div>
+             <div class="my-3">
+               비밀번호 : <input type="password" class="form-control" id="pwVal">
+             </div>
+             <button type="submit" class="btn btn-primary" id="send">전송</button>
+             <button type="button" class="btn btn-danger" id="close">닫기</button>
+          </form> 
+        </div>
+    </div> 
+    
+
+
+    <script>
+
+        /** fade-In UI 애니메이션 만들기 **/
+        $('#open').on('click', function(){
+            $('.black-bg').addClass('show-modal');
+        })
+
+        if (3 < 1){
+            console.log("안녕");
+        } else {
+            console.log("바보");
+        }
+
+    
+
+        if( 1 == 3 ) {
+            console.log("맞아요11");
+        } else if (3 == 1){
+            console.log("맞아요22");
+        } else {
+            console.log("다 틀렸다.");
+        }
+        
+
+        // 과제 : 전송버튼 누르면 input에 입력한 값이 공백이면 알림창 띄워주세요.
+        $('#send').on('click', function(){
+            let idVal2 = document.getElementById('idVal').value;
+            
+            if(idVal == null || idVal == "") {
+               
+                alert("아이디 입력 안해줬다.");
+                // 폼 전송 막기
+                e.preventDefault();
+                
+            }
+            
+        });
+
+        /* 이렇게 작성해도 똑같음
+        $('form').on('submit', function() { 
+
+        }) */
+        
+        
+        
+        /**
+        < 과제 >
+        1) 전송버튼 누르면 아이디, 비번 input에 입력한 값이 공백인 지 검사 
+        2) 비번이 6자리 이하일 경우, 좀 더 길게 작성하라는 alert 창 출력 
+        **/
+        
+        
+        $('#send').on('click', function(){
+            let idVal = document.getElementById('idVal').value;
+            let pwVal = document.getElementById('pwVal').value;
+            
+            if(idVal == "" || pwVal == "") {
+               
+                alert("아이디나 비번이 입력되지 않았습니다.");
+                // 폼 전송 막기
+                e.preventDefault() ;
+            }
+
+            if(pwVal.length <= 6){
+                alert("비밀번호가 너무 짧습니다. 다시 입력해주세요.");
+                e.preventDefault();
+            }
+
+            
+        });
+
+
+        
+
+    </script>
+</body>
+</html>

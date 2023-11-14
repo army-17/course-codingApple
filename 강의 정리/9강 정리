@@ -1,0 +1,9 @@
+9강 : <form> 만들며 if~else 배우기
+
+<form> 태그 안에 <button> 사용할 경우, type에 "submit" 이나 "button" 적어주기
+
+조건문 작성 방법
+
+* $('').on('이벤트', function(){
+
+}); -> 뒤에다가 세미콜론(;) 적는 것이 좋음

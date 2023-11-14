@@ -1,15 +1,34 @@
+### 강의 수강 기록
 
-[ 오늘 들은 강의 ]
-
-- HTML : 1강 ~ 4강
-- JavaScript : 1강 ~ 3강(과제까지)
-
+[ 10.21.토 ]
+- HTML(Lv1) : 1강 ~ 4강
+- JavaScript(Lv1) : 1강 ~ 3강(과제까지)
 
 
 [ 11.06.월 ]
+- JavaScript(Lv1) : 3강 ~ 6강
 
-- JavaScript : 3강 ~ 6강
+
+[ 11.08.수 ]
+- JavaScript(Lv1) : 7강 ~ 8강
+
+[ 11.14.화 ]
+- - JavaScript(Lv1) : 9강, 10강
 
 
+
+
+
+### 강의 복습 및 정리 기록
+
+JavaScript(Lv1)
+    1강 : V
+    2강 : V
+    3강 : V
+    4강 : V
+    5강 : V
+    6강 : V
+    7강 : V
+    8강 : 
 
 
