@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11강 과제</title>
+</head>
+<body>
+
+    <script>
+
+        // 1번. 369게임
+        function 삼육구게임(a) {
+            if(a%3 == 0) {
+                console.log("박수");
+            } else {
+                console.log("통과");
+            }
+        }
+
+
+        // 2번. 369게임 업그레이드 버전
+        function 삼육구게임2(a) {
+            if(a%9 == 0) {
+                console.log("박수");
+                console.log("박수");
+            } else if(a%3 == 0){
+                console.log("박수");
+            } else {
+                console.log("통과");
+            }
+        }
+
+
+        // 3번. 공인중개사 점수 합격 여부
+
+        function 합격했냐(subject1, subject2){
+            
+            if(subject1 < 40 || subject2 < 40){
+                console.log("불합격");
+            } else if (subject1 + subject2 >= 120){
+                console.log("합격");
+            } else {
+                console.log("불합격");
+            }
+        }
+
+        // 응용1) 원래 369게임 룰 적용
+
+        function origin369(num){
+            if(num % 10 == 3 | num % 10 == 6 | num % 10 == 9){
+                console.log("박수");
+            } else {
+                console.log("패스");
+            }
+        }
+
+        // 응용2) 합격판독기에서 기능 추가 : 0에서 100 사이의 숫자를 입력할 경우 alert창 출력
+        function 합격했냐2(subject1, subject2){
+
+            if(subject1, subject2 < 0 || subject1, subject2 >= 100){
+                alert("숫자 제대로 입력해라");
+            } else if (subject1 < 40 || subject2 < 40){
+                console.log("불합격");
+            } else if (subject1 + subject2 >= 120){
+                console.log("합격");
+            } else {
+                console.log("불합격");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

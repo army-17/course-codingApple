@@ -24,6 +24,7 @@
              <button type="submit" class="btn btn-primary" id="send">전송</button>
              <button type="button" class="btn btn-danger" id="close">닫기</button>
           </form> 
+          <div id="alertText"></div>
         </div>
     </div> 
     
@@ -100,8 +101,27 @@
             
         });
 
+        // 11강 
+        document.getElementById('idVal').addEventListener('change', function(){
+            console.log('안녕');
+        });
 
-        
+
+        // 과제에 기능 추가 -> 비밀번호 기준에 부합할 때까지 알람 문구 보이게 하기
+        document.getElementById('pwVal').addEventListener('input', function(){
+            let pwVal = document.getElementById('pwVal').value.length;
+
+            if(pwVal < 7) {
+                document.getElementById('alertText').innerHTML = '비밀번호가 너무 짧습니다.';
+            } else {
+                document.getElementById('alertText').innerHTML = "";
+            }
+        })
+
+        if(NaN){
+            console.log("true다");
+        }
+
 
     </script>
 </body>

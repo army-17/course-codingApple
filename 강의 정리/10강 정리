@@ -1,0 +1,27 @@
+input, change 이벤트와 and, or 연산자
+
+
+input에서 발생할 수 있는 이벤트들이 있음 -> input 이벤트 : 유저가 input에 입력한 값이 변할 때마다 실행됨
+ = change : <input>에 입력한 값이 바뀌고 포커스를 잃을 때 발생하게 됨
+
+ if 조건문에는 true/false boolean 타입으로
+
+
+[비교 연산자]
+=== : 엄격한 비교 -> 타입까지 같아야 함  (부정 : !==)
+== : 느슨한 비교 (부정 : !=)
+
+[truthy 자료 : true로 인식하는 자료]
+- 0 제외 숫자
+- '문자'
+- []
+- {}
+
+[falsy 자료 : false로 인식하는 자료]
+- 0
+- ''
+- null
+- undefined
+- NaN
+
+[and, or 연산자 설명]

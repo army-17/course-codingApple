@@ -13,7 +13,10 @@
 - JavaScript(Lv1) : 7강 ~ 8강
 
 [ 11.14.화 ]
-- - JavaScript(Lv1) : 9강, 10강
+- JavaScript(Lv1) : 9강, 10강
+
+[ 11.15.수 ]
+- JavaScript(Lv1) : 11강, 12강, 13강, (Lv2) 1강
 
 
 
@@ -30,5 +33,7 @@ JavaScript(Lv1)
     6강 : V
     7강 : V
     8강 : 
+    9강 : 
+    10강 : 
 
 
