@@ -55,10 +55,10 @@
         
 
         // 과제 : 전송버튼 누르면 input에 입력한 값이 공백이면 알림창 띄워주세요.
-        $('#send').on('click', function(){
+        $('#send').on('click', function(e){
             let idVal2 = document.getElementById('idVal').value;
             
-            if(idVal == null || idVal == "") {
+            if(idVal2 == null || idVal2 == "") {
                
                 alert("아이디 입력 안해줬다.");
                 // 폼 전송 막기
@@ -82,24 +82,24 @@
         **/
         
         
-        $('#send').on('click', function(){
-            let idVal = document.getElementById('idVal').value;
-            let pwVal = document.getElementById('pwVal').value;
+        // $('#send').on('click', function(){
+        //     let idVal = document.getElementById('idVal').value;
+        //     let pwVal = document.getElementById('pwVal').value;
             
-            if(idVal == "" || pwVal == "") {
+        //     if(idVal == "" || pwVal == "") {
                
-                alert("아이디나 비번이 입력되지 않았습니다.");
-                // 폼 전송 막기
-                e.preventDefault() ;
-            }
+        //         alert("아이디나 비번이 입력되지 않았습니다.");
+        //         // 폼 전송 막기
+        //         e.preventDefault() ;
+        //     }
 
-            if(pwVal.length <= 6){
-                alert("비밀번호가 너무 짧습니다. 다시 입력해주세요.");
-                e.preventDefault();
-            }
+        //     if(pwVal.length <= 6){
+        //         alert("비밀번호가 너무 짧습니다. 다시 입력해주세요.");
+        //         e.preventDefault();
+        //     }
 
             
-        });
+        // });
 
         // 11강 
         document.getElementById('idVal').addEventListener('change', function(){
