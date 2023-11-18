@@ -1,0 +1,46 @@
+.profile{
+    width: 100px;  
+    display: block; 
+    margin-left: auto; 
+    margin: auto;
+}
+
+.title {
+    font-size: 16px; 
+    font-family: gulim; 
+    color: blue; 
+    letter-spacing: 10px; 
+    text-align: center;
+}
+
+p {
+    color: red; 
+    font-weight: 900;
+    text-align: center;
+}
+
+.content {
+    color: pink;
+}
+
+#special {
+    color: black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    margin: 30px; /* margin : 상하좌우 여백 */
+    margin-left: 10px;
+    padding: 40px;
+    border: 4px dotted black;
+    border-radius: 15px;
+    /* <div> 가운데 정렬 : <div>, <p>, <h>는 display:block 을 기본 속성으로 가지고 있음 */ 
+    display: block;  /* 가로행을 전부 차지해달라 */
+    margin-left: auto; 
+    margin: auto;
+    font-size: 10px;
+    color: black;
+    box-shadow: 10px 10px 5px grey;
+}
