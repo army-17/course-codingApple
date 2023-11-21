@@ -1,2 +1,3 @@
 # course-codingApple
-코딩애플 교육
+
+강의수강
