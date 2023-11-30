@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-danger">
+        <span id="second">5</span>초 이내 구매시 사은품 증정!
+    </div>
+
+    <script>
+
+        // setTimeout(function(){ 
+        //     console.log("안녕")
+        // }, 1000);
+
+        // // 1초 지나면 해당 div 사라짐
+        // setTimeout(function(){
+        //     $('.alert').hide();
+        // },1000);
+
+        // // x초마다 코드 실행
+        // setInterval(function(){
+        //     console.log("안녕");
+        // }, 1000);
+
+        /**
+         * var let function : 자바스크립트 문법
+         * document.getElementById : 브라우저 사용법 = Web Browser API 사용법
+         **/
+
+        //  setTimeout(함수, 1000); // 콜백함수 자리에 만들어둔 함수 넣을 수 있음. 함수() 이렇게 작성하면 안된다.
+
+        //  function 함수(){
+        //     console.log("함수 출력");
+        //  }
+
+
+
+        /************************************************************************************************************/
+         // HW : 1초마다 5라는 문자를 1씩 감소, 0이 되면 <div> 안보이게
+        let second = $("#second").text();
+        console.log("second" + typeof second);
+        let secondInt = Number(second);
+        
+        console.log("second" + (secondInt - 1));
+
+        setInterval(function(){
+            let second = $("#second").text();
+            let secondInt = Number(second);
+
+            if(secondInt !== 0){
+                console.log("second" + typeof secondInt);
+                secondInt = secondInt - 1;
+                console.log("secondInt : " + secondInt);
+                $("#second").html(secondInt);
+            
+            } else {
+                $(".alert").css('display', 'none');
+            }
+            
+            
+
+        }, 1000);
+        
+
+
+    </script>
+</body>
+</html>
