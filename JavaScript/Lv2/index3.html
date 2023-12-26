@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 2일차</title>
+    <link rel="stylesheet" href="../css/index8.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <button id="open">로그인</button>
+
+    <div class="black-bg">
+        <div class="white-bg">
+          <h4>로그인하세요</h4>
+          <form action="success.html" id="myForm">
+            <div class="my-3">
+              아이디 : <input type="text" class="form-control" id="idVal">
+             </div>
+             <div class="my-3">
+               비밀번호 : <input type="password" class="form-control" id="pwVal">
+             </div>
+             <button type="submit" class="btn btn-primary" id="send">전송</button>
+             <button type="button" class="btn btn-danger" id="close">닫기</button>
+          </form> 
+          <div id="alertText"></div>
+        </div>
+    </div> 
+    
+
+
+    <script>
+
+        /** fade-In UI 애니메이션 만들기 **/
+        $('#open').on('click', function(){
+            $('.black-bg').addClass('show-modal');
+        })
+
+        $('form').on('submit', function(event){
+            
+            // 아이디 입력값 validation 체크
+            var idVal = document.getElementById('idVal').value;
+
+            if (idVal == ''){
+                alert('아이디 입력안함');
+                event.preventDefault();
+            }
+
+            if(!(/\S+@\S+\.\S/.test(idVal))){
+                alert('이메일 형식이 아닙니다.');
+                event.preventDefault();
+            }
+
+            // 비밀번호 입력값  validation 체크
+            var pwVal = document.getElementById('pwVal').value;
+            if(!/[A-Z]/.test(pwVal)){
+                alert('비밀번호에 대문자를 포함해주세요');
+                event.preventDefault();
+            }
+        })
+
+
+
+        // 과제에 기능 추가 -> 비밀번호 기준에 부합할 때까지 알람 문구 보이게 하기
+        document.getElementById('pwVal').addEventListener('input', function(){
+            let pwVal = document.getElementById('pwVal').value.length;
+
+            if(pwVal < 7) {
+                document.getElementById('alertText').innerHTML = '비밀번호가 너무 짧습니다.';
+            } else {
+                document.getElementById('alertText').innerHTML = "";
+            }
+        })
+
+    </script>
+
+    
+</body>
+</html>
