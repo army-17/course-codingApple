@@ -4,10 +4,8 @@
 - HTML(Lv1) : 1강 ~ 4강
 - JavaScript(Lv1) : 1강 ~ 3강(과제까지)
 
-
 [ 11.06.월 ]
 - JavaScript(Lv1) : 3강 ~ 6강
-
 
 [ 11.08.수 ]
 - JavaScript(Lv1) : 7강 ~ 8강
@@ -23,6 +21,8 @@
 
 [ 11.30.목 ]
 - JavaScript(Lv2)
+
+
 
 
 
