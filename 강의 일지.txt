@@ -20,7 +20,15 @@
 - HTML(Lv1) : 5강, 6강
 
 [ 11.30.목 ]
-- JavaScript(Lv2)
+- JavaScript(Lv2) : 1강, 2강, 3강
+
+[ 12.26.화 ]
+- JavaScript(Lv2) : 3강
+
+[ 12.27.수 ]
+- JavaScript(Lv2) : 4강
+
+
 
 
 
